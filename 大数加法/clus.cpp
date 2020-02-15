@@ -52,7 +52,7 @@ char* bigadd(char* adda, int lena, char* addb, int lenb) {     //¼Ó·¨ÔËËãµÄ·½·¨¡
     for (i = lensum - 2; i >= 0; i--) {
           final[j++] = result[i] + '0';
     }
-    memcpy(result, final, lensum);                                         //ÔÙ°ÑresultÖ¸ÕëÖ¸ÏòfinalÊı×éÖĞ£¬²¢·µ»ØresultÖ¸Õë¡£   
+    memcpy(result, final, lensum);   
     result[j] = '\0';
     free(final);
     return result;
